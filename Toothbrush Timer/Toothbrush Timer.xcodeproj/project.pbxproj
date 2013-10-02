@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003E0DCA8FE945FC915E3611 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E8B10E662049C1ABC8E9AC /* libPods.a */; };
+		B0B3BE4217FB3738003DF178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3BE4117FB3738003DF178 /* Foundation.framework */; };
+		B0B3BE4417FB3738003DF178 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3BE4317FB3738003DF178 /* CoreGraphics.framework */; };
+		B0B3BE4617FB3738003DF178 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3BE4517FB3738003DF178 /* UIKit.framework */; };
+		B0B3BE4C17FB3738003DF178 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0B3BE4A17FB3738003DF178 /* InfoPlist.strings */; };
+		B0B3BE4E17FB3738003DF178 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B3BE4D17FB3738003DF178 /* main.m */; };
+		B0B3BE5217FB3738003DF178 /* PMLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B3BE5117FB3738003DF178 /* PMLAppDelegate.m */; };
+		B0B3BE5517FB3738003DF178 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B3BE5317FB3738003DF178 /* Main.storyboard */; };
+		B0B3BE5817FB3738003DF178 /* PMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B3BE5717FB3738003DF178 /* PMLViewController.m */; };
+		B0B3BE5A17FB3738003DF178 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B3BE5917FB3738003DF178 /* Images.xcassets */; };
+		B0B3BE6117FB3738003DF178 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3BE6017FB3738003DF178 /* XCTest.framework */; };
+		B0B3BE6217FB3738003DF178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3BE4117FB3738003DF178 /* Foundation.framework */; };
+		B0B3BE6317FB3738003DF178 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3BE4517FB3738003DF178 /* UIKit.framework */; };
+		B0B3BE6B17FB3738003DF178 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0B3BE6917FB3738003DF178 /* InfoPlist.strings */; };
+		B0B3BE6D17FB3738003DF178 /* Toothbrush_TimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B3BE6C17FB3738003DF178 /* Toothbrush_TimerTests.m */; };
+		B0B3BEBD17FB8337003DF178 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B0B3BEBC17FB8336003DF178 /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0B3BE6417FB3738003DF178 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0B3BE3617FB3738003DF178 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0B3BE3D17FB3738003DF178;
+			remoteInfo = "Toothbrush Timer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AF4CB71EA14357B281AFF7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		B0B3BE3E17FB3738003DF178 /* Toothbrush Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toothbrush Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B3BE4117FB3738003DF178 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B0B3BE4317FB3738003DF178 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B0B3BE4517FB3738003DF178 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B0B3BE4917FB3738003DF178 /* Toothbrush Timer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Toothbrush Timer-Info.plist"; sourceTree = "<group>"; };
+		B0B3BE4B17FB3738003DF178 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0B3BE4D17FB3738003DF178 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0B3BE4F17FB3738003DF178 /* Toothbrush Timer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toothbrush Timer-Prefix.pch"; sourceTree = "<group>"; };
+		B0B3BE5017FB3738003DF178 /* PMLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMLAppDelegate.h; sourceTree = "<group>"; };
+		B0B3BE5117FB3738003DF178 /* PMLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMLAppDelegate.m; sourceTree = "<group>"; };
+		B0B3BE5417FB3738003DF178 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0B3BE5617FB3738003DF178 /* PMLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMLViewController.h; sourceTree = "<group>"; };
+		B0B3BE5717FB3738003DF178 /* PMLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMLViewController.m; sourceTree = "<group>"; };
+		B0B3BE5917FB3738003DF178 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B0B3BE5F17FB3738003DF178 /* Toothbrush TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Toothbrush TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B3BE6017FB3738003DF178 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B0B3BE6817FB3738003DF178 /* Toothbrush TimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Toothbrush TimerTests-Info.plist"; sourceTree = "<group>"; };
+		B0B3BE6A17FB3738003DF178 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B0B3BE6C17FB3738003DF178 /* Toothbrush_TimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Toothbrush_TimerTests.m; sourceTree = "<group>"; };
+		B0B3BEBC17FB8336003DF178 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C1E8B10E662049C1ABC8E9AC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0B3BE3B17FB3738003DF178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B3BE4417FB3738003DF178 /* CoreGraphics.framework in Frameworks */,
+				B0B3BE4617FB3738003DF178 /* UIKit.framework in Frameworks */,
+				B0B3BE4217FB3738003DF178 /* Foundation.framework in Frameworks */,
+				003E0DCA8FE945FC915E3611 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0B3BE5C17FB3738003DF178 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B3BE6117FB3738003DF178 /* XCTest.framework in Frameworks */,
+				B0B3BE6317FB3738003DF178 /* UIKit.framework in Frameworks */,
+				B0B3BE6217FB3738003DF178 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0B3BE3517FB3738003DF178 = {
+			isa = PBXGroup;
+			children = (
+				B0B3BE4717FB3738003DF178 /* Toothbrush Timer */,
+				B0B3BE6617FB3738003DF178 /* Toothbrush TimerTests */,
+				B0B3BE4017FB3738003DF178 /* Frameworks */,
+				B0B3BE3F17FB3738003DF178 /* Products */,
+				03AF4CB71EA14357B281AFF7 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B0B3BE3F17FB3738003DF178 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3BE3E17FB3738003DF178 /* Toothbrush Timer.app */,
+				B0B3BE5F17FB3738003DF178 /* Toothbrush TimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0B3BE4017FB3738003DF178 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3BE4117FB3738003DF178 /* Foundation.framework */,
+				B0B3BE4317FB3738003DF178 /* CoreGraphics.framework */,
+				B0B3BE4517FB3738003DF178 /* UIKit.framework */,
+				B0B3BE6017FB3738003DF178 /* XCTest.framework */,
+				C1E8B10E662049C1ABC8E9AC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0B3BE4717FB3738003DF178 /* Toothbrush Timer */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3BE5017FB3738003DF178 /* PMLAppDelegate.h */,
+				B0B3BE5117FB3738003DF178 /* PMLAppDelegate.m */,
+				B0B3BE5317FB3738003DF178 /* Main.storyboard */,
+				B0B3BE5617FB3738003DF178 /* PMLViewController.h */,
+				B0B3BE5717FB3738003DF178 /* PMLViewController.m */,
+				B0B3BE5917FB3738003DF178 /* Images.xcassets */,
+				B0B3BE4817FB3738003DF178 /* Supporting Files */,
+			);
+			path = "Toothbrush Timer";
+			sourceTree = "<group>";
+		};
+		B0B3BE4817FB3738003DF178 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3BE4917FB3738003DF178 /* Toothbrush Timer-Info.plist */,
+				B0B3BE4A17FB3738003DF178 /* InfoPlist.strings */,
+				B0B3BE4D17FB3738003DF178 /* main.m */,
+				B0B3BE4F17FB3738003DF178 /* Toothbrush Timer-Prefix.pch */,
+				B0B3BEBC17FB8336003DF178 /* Settings.bundle */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0B3BE6617FB3738003DF178 /* Toothbrush TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3BE6C17FB3738003DF178 /* Toothbrush_TimerTests.m */,
+				B0B3BE6717FB3738003DF178 /* Supporting Files */,
+			);
+			path = "Toothbrush TimerTests";
+			sourceTree = "<group>";
+		};
+		B0B3BE6717FB3738003DF178 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0B3BE6817FB3738003DF178 /* Toothbrush TimerTests-Info.plist */,
+				B0B3BE6917FB3738003DF178 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0B3BE3D17FB3738003DF178 /* Toothbrush Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0B3BE7017FB3738003DF178 /* Build configuration list for PBXNativeTarget "Toothbrush Timer" */;
+			buildPhases = (
+				661103AB94B74AE3A74A5DAB /* Check Pods Manifest.lock */,
+				B0B3BE3A17FB3738003DF178 /* Sources */,
+				B0B3BE3B17FB3738003DF178 /* Frameworks */,
+				B0B3BE3C17FB3738003DF178 /* Resources */,
+				026FE2DB25D943B69A43B212 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Toothbrush Timer";
+			productName = "Toothbrush Timer";
+			productReference = B0B3BE3E17FB3738003DF178 /* Toothbrush Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0B3BE5E17FB3738003DF178 /* Toothbrush TimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0B3BE7317FB3738003DF178 /* Build configuration list for PBXNativeTarget "Toothbrush TimerTests" */;
+			buildPhases = (
+				B0B3BE5B17FB3738003DF178 /* Sources */,
+				B0B3BE5C17FB3738003DF178 /* Frameworks */,
+				B0B3BE5D17FB3738003DF178 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0B3BE6517FB3738003DF178 /* PBXTargetDependency */,
+			);
+			name = "Toothbrush TimerTests";
+			productName = "Toothbrush TimerTests";
+			productReference = B0B3BE5F17FB3738003DF178 /* Toothbrush TimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0B3BE3617FB3738003DF178 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PML;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = postmechanical;
+				TargetAttributes = {
+					B0B3BE5E17FB3738003DF178 = {
+						TestTargetID = B0B3BE3D17FB3738003DF178;
+					};
+				};
+			};
+			buildConfigurationList = B0B3BE3917FB3738003DF178 /* Build configuration list for PBXProject "Toothbrush Timer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0B3BE3517FB3738003DF178;
+			productRefGroup = B0B3BE3F17FB3738003DF178 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0B3BE3D17FB3738003DF178 /* Toothbrush Timer */,
+				B0B3BE5E17FB3738003DF178 /* Toothbrush TimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0B3BE3C17FB3738003DF178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B3BEBD17FB8337003DF178 /* Settings.bundle in Resources */,
+				B0B3BE5A17FB3738003DF178 /* Images.xcassets in Resources */,
+				B0B3BE4C17FB3738003DF178 /* InfoPlist.strings in Resources */,
+				B0B3BE5517FB3738003DF178 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0B3BE5D17FB3738003DF178 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B3BE6B17FB3738003DF178 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		026FE2DB25D943B69A43B212 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		661103AB94B74AE3A74A5DAB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0B3BE3A17FB3738003DF178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B3BE5817FB3738003DF178 /* PMLViewController.m in Sources */,
+				B0B3BE5217FB3738003DF178 /* PMLAppDelegate.m in Sources */,
+				B0B3BE4E17FB3738003DF178 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0B3BE5B17FB3738003DF178 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B3BE6D17FB3738003DF178 /* Toothbrush_TimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0B3BE6517FB3738003DF178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0B3BE3D17FB3738003DF178 /* Toothbrush Timer */;
+			targetProxy = B0B3BE6417FB3738003DF178 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0B3BE4A17FB3738003DF178 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0B3BE4B17FB3738003DF178 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B0B3BE5317FB3738003DF178 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0B3BE5417FB3738003DF178 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0B3BE6917FB3738003DF178 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0B3BE6A17FB3738003DF178 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0B3BE6E17FB3738003DF178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B0B3BE6F17FB3738003DF178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0B3BE7117FB3738003DF178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03AF4CB71EA14357B281AFF7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CURRENT_PROJECT_VERSION = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Toothbrush Timer/Toothbrush Timer-Prefix.pch";
+				INFOPLIST_FILE = "Toothbrush Timer/Toothbrush Timer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B0B3BE7217FB3738003DF178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03AF4CB71EA14357B281AFF7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CURRENT_PROJECT_VERSION = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Toothbrush Timer/Toothbrush Timer-Prefix.pch";
+				INFOPLIST_FILE = "Toothbrush Timer/Toothbrush Timer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B0B3BE7417FB3738003DF178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Toothbrush Timer.app/Toothbrush Timer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Toothbrush Timer/Toothbrush Timer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Toothbrush TimerTests/Toothbrush TimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B0B3BE7517FB3738003DF178 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Toothbrush Timer.app/Toothbrush Timer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Toothbrush Timer/Toothbrush Timer-Prefix.pch";
+				INFOPLIST_FILE = "Toothbrush TimerTests/Toothbrush TimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0B3BE3917FB3738003DF178 /* Build configuration list for PBXProject "Toothbrush Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B3BE6E17FB3738003DF178 /* Debug */,
+				B0B3BE6F17FB3738003DF178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0B3BE7017FB3738003DF178 /* Build configuration list for PBXNativeTarget "Toothbrush Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B3BE7117FB3738003DF178 /* Debug */,
+				B0B3BE7217FB3738003DF178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0B3BE7317FB3738003DF178 /* Build configuration list for PBXNativeTarget "Toothbrush TimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0B3BE7417FB3738003DF178 /* Debug */,
+				B0B3BE7517FB3738003DF178 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0B3BE3617FB3738003DF178 /* Project object */;
+}

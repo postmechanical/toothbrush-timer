@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+xcodeproj 'Toothbrush Timer.xcodeproj'
+
+pod 'DACircularProgress', '~> 2.1.0'
+pod 'TestFlightSDK', '~> 2.0'
+pod 'PMLPopper', :path => '/Users/alondon/Workspace/SaltyCocoa/CocoaPods/Demo-3/Popper'
+
+post_install do | installer |
+  require 'fileutils'
+  FileUtils.cp_r('Pods/Pods-Acknowledgements.plist', 'Toothbrush Timer/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+end

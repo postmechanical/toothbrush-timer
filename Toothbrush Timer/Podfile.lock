@@ -1,0 +1,20 @@
+PODS:
+  - DACircularProgress (2.1.0)
+  - PMLPopper (0.0.1)
+  - TestFlightSDK (2.0)
+
+DEPENDENCIES:
+  - DACircularProgress (~> 2.1.0)
+  - PMLPopper (from `/Users/alondon/Workspace/SaltyCocoa/CocoaPods/Demo-3/Popper`)
+  - TestFlightSDK (~> 2.0)
+
+EXTERNAL SOURCES:
+  PMLPopper:
+    :path: /Users/alondon/Workspace/SaltyCocoa/CocoaPods/Demo-3/Popper
+
+SPEC CHECKSUMS:
+  DACircularProgress: 8c8f20c8dffdd647fbf570ddecbc2b1b59da5888
+  PMLPopper: 4856139948cb48af69f77e0b2c872e17cb4d32f8
+  TestFlightSDK: 940906d4b2550cf397c6f2d2fcc4ebfdcd8ae858
+
+COCOAPODS: 0.25.0

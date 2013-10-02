@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A584" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="PMLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2PL-OY-Q40"/>
+                        <viewControllerLayoutGuide type="bottom" id="eBM-lV-bNE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQk-Qb-EaC" customClass="DACircularProgressView">
+                                <rect key="frame" x="38" y="162" width="244" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="244" id="7Cg-pM-VOb"/>
+                                    <constraint firstAttribute="width" constant="244" id="auH-8p-GHV"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVk-pT-COA">
+                                <rect key="frame" x="80" y="229" width="161" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="96"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="brush" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ze9-Sa-fn2">
+                                <rect key="frame" x="132" y="414" width="57" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="cQk-Qb-EaC" secondAttribute="centerY" id="5Ch-wt-7R6"/>
+                            <constraint firstAttribute="centerX" secondItem="cQk-Qb-EaC" secondAttribute="centerX" id="CVW-Eb-4qc"/>
+                            <constraint firstItem="Ze9-Sa-fn2" firstAttribute="top" secondItem="cQk-Qb-EaC" secondAttribute="bottom" constant="8" id="CpP-kd-Xtd"/>
+                            <constraint firstAttribute="centerX" secondItem="Ze9-Sa-fn2" secondAttribute="centerX" id="MHo-Z9-Sq1"/>
+                            <constraint firstAttribute="centerX" secondItem="CVk-pT-COA" secondAttribute="centerX" id="mnd-QH-wXn"/>
+                            <constraint firstAttribute="centerY" secondItem="CVk-pT-COA" secondAttribute="centerY" id="zJ5-qS-mJW"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kJa-EK-juI" appends="YES" id="NNV-8o-8i8"/>
+                            <outletCollection property="gestureRecognizers" destination="L8w-y6-U7l" appends="YES" id="5eJ-E9-QgE"/>
+                            <outletCollection property="gestureRecognizers" destination="L8w-y6-U7l" appends="YES" id="1cO-9U-vJK"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="brushLabel" destination="Ze9-Sa-fn2" id="TuG-d4-NVE"/>
+                        <outlet property="doubleTapRecognizer" destination="L8w-y6-U7l" id="oUl-8r-cbr"/>
+                        <outlet property="progressView" destination="cQk-Qb-EaC" id="5KR-Lf-PUM"/>
+                        <outlet property="secondsLabel" destination="CVk-pT-COA" id="TO2-5H-wga"/>
+                        <outlet property="singleTapRecognizer" destination="kJa-EK-juI" id="RCO-lt-zDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer delaysTouchesBegan="YES" delaysTouchesEnded="NO" id="kJa-EK-juI" userLabel="Single Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="tap:" destination="vXZ-lx-hvc" id="5db-Pk-3eO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer delaysTouchesBegan="YES" delaysTouchesEnded="NO" numberOfTapsRequired="2" id="L8w-y6-U7l" userLabel="Double Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="doubleTap:" destination="vXZ-lx-hvc" id="CXa-46-eWO"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
