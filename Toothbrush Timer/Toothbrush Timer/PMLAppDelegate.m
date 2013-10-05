@@ -7,12 +7,13 @@
 //
 
 #import "PMLAppDelegate.h"
+#import "TestFlight.h"
 
 @implementation PMLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+	[TestFlight takeOff:@"c4b414d0-f6f7-48d9-8c03-81f8fe982516"];
     return YES;
 }
 							

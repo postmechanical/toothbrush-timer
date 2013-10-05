@@ -2,22 +2,18 @@
 //  PMLViewController.h
 //  Toothbrush Timer
 //
-//  Created by Aaron London on 10/1/13.
+//  Created by Aaron London on 10/4/13.
 //  Copyright (c) 2013 postmechanical. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "DACircularProgressView.h"
+#import "PMLTimerViewController.h"
 
-@interface PMLViewController : UIViewController
+@interface PMLViewController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *brushLabel;
-@property (weak, nonatomic) IBOutlet UILabel *secondsLabel;
-@property (weak, nonatomic) IBOutlet DACircularProgressView *progressView;
-@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *singleTapRecognizer;
-@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *doubleTapRecognizer;
+@property(nonatomic,strong) IBOutlet UIPageViewController *pageViewController;
 
-- (IBAction)tap:(UITapGestureRecognizer*)recognizer;
-- (IBAction)doubleTap:(UITapGestureRecognizer*)recognizer;
+@property(nonatomic,strong) IBOutlet PMLTimerViewController *brushViewController;
+@property(nonatomic,strong) IBOutlet PMLTimerViewController *rinseViewController;
 
 @end
