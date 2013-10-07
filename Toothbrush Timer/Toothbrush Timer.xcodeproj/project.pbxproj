@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		003E0DCA8FE945FC915E3611 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1E8B10E662049C1ABC8E9AC /* libPods.a */; };
-		B07B9AE417FF89A80095ECF8 /* PMLPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07B9AE317FF89A80095ECF8 /* PMLPageViewController.m */; };
 		B07B9AEA17FF92D80095ECF8 /* PMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07B9AE917FF92D80095ECF8 /* PMLViewController.m */; };
 		B0B3BE4217FB3738003DF178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3BE4117FB3738003DF178 /* Foundation.framework */; };
 		B0B3BE4417FB3738003DF178 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B3BE4317FB3738003DF178 /* CoreGraphics.framework */; };
@@ -41,8 +40,6 @@
 
 /* Begin PBXFileReference section */
 		03AF4CB71EA14357B281AFF7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		B07B9AE217FF89A80095ECF8 /* PMLPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMLPageViewController.h; sourceTree = "<group>"; };
-		B07B9AE317FF89A80095ECF8 /* PMLPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMLPageViewController.m; sourceTree = "<group>"; };
 		B07B9AE817FF92D80095ECF8 /* PMLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMLViewController.h; sourceTree = "<group>"; };
 		B07B9AE917FF92D80095ECF8 /* PMLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMLViewController.m; sourceTree = "<group>"; };
 		B0B3BE3E17FB3738003DF178 /* Toothbrush Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toothbrush Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,8 +132,6 @@
 				B0B3BE5117FB3738003DF178 /* PMLAppDelegate.m */,
 				B0B8D81317FE832900E50DA3 /* PMLPopper.h */,
 				B0B8D81417FE832900E50DA3 /* PMLPopper.m */,
-				B07B9AE217FF89A80095ECF8 /* PMLPageViewController.h */,
-				B07B9AE317FF89A80095ECF8 /* PMLPageViewController.m */,
 				B0B3BE5617FB3738003DF178 /* PMLTimerViewController.h */,
 				B0B3BE5717FB3738003DF178 /* PMLTimerViewController.m */,
 				B07B9AE817FF92D80095ECF8 /* PMLViewController.h */,
@@ -315,7 +310,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07B9AEA17FF92D80095ECF8 /* PMLViewController.m in Sources */,
-				B07B9AE417FF89A80095ECF8 /* PMLPageViewController.m in Sources */,
 				B0B3BE5817FB3738003DF178 /* PMLTimerViewController.m in Sources */,
 				B0B8D81617FE832900E50DA3 /* PMLPopper.m in Sources */,
 				B0B3BE5217FB3738003DF178 /* PMLAppDelegate.m in Sources */,
@@ -445,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03AF4CB71EA14357B281AFF7 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CURRENT_PROJECT_VERSION = 0;
@@ -461,8 +456,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03AF4CB71EA14357B281AFF7 /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Toothbrush Timer/Toothbrush Timer-Prefix.pch";
