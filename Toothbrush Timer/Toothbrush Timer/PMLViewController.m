@@ -26,10 +26,12 @@
         self.brushViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"BrushViewController"];
         self.brushViewController.endSeconds = 120;
         self.brushViewController.intervalSeconds = 30;
+        self.brushViewController.delegate = self;
 
         self.rinseViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"RinseViewController"];
         self.rinseViewController.endSeconds = 60;
         self.rinseViewController.intervalSeconds = 0;
+        self.rinseViewController.delegate = self;
 
         self.pageViewController = (UIPageViewController*)segue.destinationViewController;
         self.pageViewController.dataSource = self;
@@ -68,5 +70,18 @@
 
 #pragma mark - UIPageViewControllerDelegate
 
+#pragma mark - PMLTimerViewControllerDelegate
+
+- (void)timerViewControllerDidFinish:(PMLTimerViewController *)timerViewController
+{
+    if (timerViewController == self.rinseViewController)
+    {
+        [self.pageViewController setViewControllers:@[self.brushViewController] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
+    }
+    else
+    {
+        [self.pageViewController setViewControllers:@[self.rinseViewController] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    }
+}
 
 @end

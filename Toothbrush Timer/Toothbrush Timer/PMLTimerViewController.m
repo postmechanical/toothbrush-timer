@@ -90,9 +90,17 @@
         }
         if (self.seconds == self.endSeconds)
         {
-            [self.popper pop];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self reset:YES];
+                double delayInSeconds = 0.5;
+                dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+                dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                    [self.popper pop];
+                    if (self.delegate && [self.delegate respondsToSelector:@selector(timerViewControllerDidFinish:)])
+                    {
+                        [self.delegate timerViewControllerDidFinish:self];
+                    }
+                });
             });
         }
     });

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PMLTimerViewController.h"
 
-@interface PMLViewController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
+@interface PMLViewController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, PMLTimerViewControllerDelegate>
 
 @property(nonatomic,strong) IBOutlet UIPageViewController *pageViewController;
 
